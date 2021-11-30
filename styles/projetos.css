@@ -103,6 +103,7 @@ a {
   border-radius: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
+  align-items: center;
 }
 
 .projeto div img {
@@ -138,6 +139,10 @@ footer {
   flex-direction: column;
 }
 
+footer p {
+  margin-top: 20px;
+}
+
 footer img {
   border-radius: 50%;
   height: 200px;
@@ -166,10 +171,6 @@ footer img {
   }
 }
 
-@media screen and (max-width: 1200px) {
-  
-}
-
 @media screen and (max-width: 900px) {
   .projeto {
       flex-direction: column;
@@ -182,5 +183,17 @@ footer img {
 
   .menuNav {
       margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .menuNav {
+    flex-direction: column;
+  }
+
+  .menuNav li {
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
   }
 }

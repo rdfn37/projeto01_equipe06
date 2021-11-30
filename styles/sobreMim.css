@@ -162,6 +162,10 @@ footer {
   flex-direction: column;
 }
 
+footer p {
+    margin-top: 20px;
+}
+
 footer img {
     border-radius: 50%;
     height: 200px;
@@ -213,3 +217,15 @@ footer img {
         justify-content: center;
     }
 }
+
+@media screen and (max-width: 650px) {
+    .menuNav {
+      flex-direction: column;
+    }
+  
+    .menuNav li {
+      margin-bottom: 30px;
+      align-items: center;
+      justify-content: center;
+    }
+  }

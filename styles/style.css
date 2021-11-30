@@ -150,6 +150,10 @@ footer img {
     height: 200px;
 }
 
+footer p {
+    margin-top: 20px;
+}
+
 .informacoes {
     margin-left: 100px;
 }
@@ -179,7 +183,7 @@ footer img {
     }
 }
 
-@media screen and (max-width: 500px)  {
+@media screen and (max-width: 650px)  {
     .menuNav {
         flex-direction: column;
     }

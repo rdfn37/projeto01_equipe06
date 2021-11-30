@@ -99,6 +99,10 @@ footer {
   flex-direction: column;
 }
 
+footer p {
+    margin-top: 20px;
+}
+
 footer img {
     border-radius: 50%;
     height: 200px;
