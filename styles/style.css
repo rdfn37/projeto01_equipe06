@@ -8,12 +8,16 @@ html, body {
 }
 
 body {
-    font-family: 'Oswald', sans-serif;
+    font-family: "Open Sans", sans-serif;
+    color: #4A4A4A;
     display: grid;
     grid-template-rows:min-content 1fr ;
     gap: 10px;
     background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Great+Vibes&family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 /* header */
 
@@ -35,12 +39,14 @@ header {
     width: 100%;
 }
 
-.logo {
-    margin-left: 10px;
+.titulo {
+    color: #000;
+    font-size: 2.2em;
 }
 
+
 .logo img {
-    height: 200px;
+    height: 250px;
     border-radius: 50%;
     margin-top: 5px;
 }
@@ -95,7 +101,7 @@ main {
 }
 
 main a {
-    color: #000;
+    color: #4A4A4A;
 }
 
 .conteudo {
@@ -107,7 +113,6 @@ main a {
     background-color: #F7F7F7;
     padding: 10px;
     border-radius: 5px;
-    
 }
 
 
@@ -128,14 +133,6 @@ main a {
     margin-right: 20px;
 }
 
-.titulo {
-    margin-bottom: 20px;
-    font-style: italic;
-    color: #000;
-}
-
-
-
 /* footer */
 
 footer {
@@ -145,7 +142,7 @@ footer {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
 }
 
 footer img {
@@ -160,9 +157,13 @@ footer img {
 
 /* mediaQuery */
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1300px) {
     header, .conteudo, footer, .headerTop {
         flex-direction: column;
+    }
+
+    .conteudo {
+        flex-direction: column-reverse;
     }
 
     .menuNav {

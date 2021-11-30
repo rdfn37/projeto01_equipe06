@@ -8,12 +8,15 @@ html, body {
 }
 
 body {
-    font-family: 'Oswald', sans-serif;
+    font-family: "Open Sans", sans-serif;
     display: grid;
     grid-template-rows:min-content 1fr;
     gap: 10px;
     background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 
 header {
     color: #fff;
@@ -31,6 +34,11 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+}
+
+.titulo {
+    color: #000;
+    font-size: 2.2em;
 }
 
 .logo {
@@ -88,7 +96,7 @@ footer {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     display: flex;
-    align-items: center;
+  flex-direction: column;
 }
 
 footer img {
@@ -100,7 +108,7 @@ footer img {
     margin-left: 100px;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1300px) {
     header, .conteudo, footer, .headerTop {
         flex-direction: column;
     }
@@ -118,7 +126,7 @@ footer img {
     }
 }
 
-@media screen and (max-width: 500px)  {
+@media screen and (max-width: 900px)  {
     .menuNav {
         flex-direction: column;
     }

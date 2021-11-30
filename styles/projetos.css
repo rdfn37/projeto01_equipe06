@@ -10,7 +10,8 @@ html, body {
 }
 
 body {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Open Sans", sans-serif;
+  color: #4A4A4A;
   display: grid;
   grid-template-rows:min-content 1fr ;
   gap: 10px;
@@ -35,6 +36,12 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+}
+
+.titulo {
+  color: #000;
+  font-size: 2.2em;
+  font-weight: 900;
 }
 
 .logo {
@@ -107,12 +114,18 @@ a {
 
 
 .texto {
-  padding: 16px;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: -1px;
+  color: #4A4A4A;
+  padding: 20px;
   text-align: justify;
 }
 
 .texto h2 {
   text-align: center;
+  color: #000;
+  margin-bottom: 10px;
 }
 
 footer {
@@ -122,7 +135,7 @@ footer {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 
 footer img {
@@ -132,10 +145,11 @@ footer img {
 
 .informacoes {
   margin-left: 100px;
+  margin-bottom: 20px;
 }
 
-@media screen and (max-width: 950px) {
-  header, .conteudo, footer, .headerTop {
+@media screen and (max-width: 1300px) {
+  header, footer, .headerTop {
     flex-direction: column;
   }
 
@@ -152,9 +166,14 @@ footer img {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  
+}
+
 @media screen and (max-width: 900px) {
   .projeto {
       flex-direction: column;
+      align-items: center;
   }
 
   .reverso {
